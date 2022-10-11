@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #1c0f0f;
+    color: #f5deb3;
+    font-size: 35px;
+}
+
+.main {
+    margin: auto;
+}
+
+.title {
+    width: 100%;
+    height: 10%;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 50px;
+    color: white
+}
+
+.display,
+.restart {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.container {
+    display: grid;
+    margin: 10px auto;
+    grid-template-columns: 36% 36% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+}
+
+.cell {
+    border: solid #fff;
+    min-width: 100px;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    line-height: 100px;
+    text-align: center;
+}
+
+button {
+    background-color: #fff;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.win {
+    background-color: wheat;
+    color: #000;
+}
+
+/* Disabling click function after game over */
+
+.disableclick {
+    pointer-events: none;
+}
+
+/* Winner Window */
+
+.winnerWindow {
+    display: none;
+}
+
+.winnerWindowShow {
+    width: max-content;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    margin: auto;
+    /* z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: 39%;*/
+}
+
+.winner {
+    font-size: 65px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    letter-spacing: 10px;
+    color: white
+}
+
+.winnerName {
+    font-size: 50px;
+    padding-bottom: 10px;
+    color: wheat;
+    max-width: 90%;
+    overflow: hidden;
+    padding: auto;
+}
+
+.drawWindow {
+    display: none;
+}
+
+.drawWindowShow {
+    width: max-content;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    margin: auto;
+}
